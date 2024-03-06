@@ -35,8 +35,21 @@ func main() {
 	isSon := strings.Contains(str, "go")
 	fmt.Println(isSon)
 
-	var s1 []string = []string{"1", "2", "3", "4"}
-	//将一系列字符串连接为一个字符串，之间用sep来分隔
-	s2 := strings.Join(s1, ",")
-	fmt.Println(s2) //1,2,3,4
+	// var s1 []string = []string{"1", "2", "3", "4"}
+	// //将一系列字符串连接为一个字符串，之间用sep来分隔
+	// s2 := strings.Join(s1, ",")
+	// fmt.Println(s2) //1,2,3,4
+
+	//是否包含
+	fmt.Println(strings.Contains(ss, "dsb"))
+	//前缀
+	fmt.Println(strings.HasPrefix(ss, "dsb"))
+	//后缀
+	fmt.Println(strings.HasSuffix(ss, "sdb"))
+
+	s4 := "abcdeb"
+	fmt.Println(strings.Index(s4, "c"))
+	fmt.Println(strings.LastIndex(s4, "d"))
+
+	fmt.Println(strings.Join(ret, "+"))
 }
